@@ -238,7 +238,7 @@ SandboxVars = {
     -- A comma-separated list of item types that will be removed after HoursForWorldItemRemoval hours.
     WorldItemRemovalList = "Base.Vest,Base.Shirt,Base.Blouse,Base.Skirt,Base.Shoes,Base.Hat,Base.Glasses,Base.Maggots",
     -- Number of hours since an item was dropped on the ground before it is removed.  Items are removed the next time that part of the map is loaded.  Zero means items are not removed. Minimum=0.00 Maximum=2147483647.00 Default=24.00
-    HoursForWorldItemRemoval = 2147483647,
+    HoursForWorldItemRemoval = 2.147483647E9,
     -- If true, any items *not* in WorldItemRemovalList will be removed.
     ItemRemovalListBlacklistToggle = false,
     -- This will affect starting world erosion and food spoilage. Default=0
@@ -348,7 +348,7 @@ SandboxVars = {
     -- Enable or disable broken limbs when survivors receive injuries from impacts, zombie damage and falls.
     BoneFracture = true,
     -- How long before zombie bodies disappear. Minimum=-1.00 Maximum=2147483647.00 Default=216.00
-    HoursForCorpseRemoval = 2147483647.0,
+    HoursForCorpseRemoval = 2.147483647E9,
     -- Governs impact that nearby decaying bodies has on the player's health and emotions. Default=Normal
     -- 1 = None
     -- 2 = Low
@@ -575,5 +575,45 @@ SandboxVars = {
         RallyGroupSeparation = 20,
         -- How close members of a group stay to the group's leader. Minimum=1 Maximum=10 Default=3
         RallyGroupRadius = 3,
+    },
+    ExpandedHotwire = {
+        AllowHotwire = true,
+        AllowHotwireBurglar = true,
+        -- Minimum=0 Maximum=10 Default=1
+        HotwireElectricity = 1,
+        -- Minimum=0 Maximum=10 Default=2
+        HotwireMechanics = 2,
+        -- Minimum=0 Maximum=2147483647 Default=200
+        HotwireBaseDuration = 200,
+        -- Minimum=-2147483647 Maximum=2147483647 Default=3
+        HotwireElectricityScalar = 3,
+        -- Minimum=-2147483647 Maximum=2147483647 Default=0
+        HotwireMechanicsScalar = 0,
+        AllowUnHotwire = true,
+        -- Minimum=0 Maximum=10 Default=1
+        UnHotwireElectricity = 1,
+        -- Minimum=0 Maximum=10 Default=2
+        UnHotwireMechanics = 2,
+        -- Minimum=0 Maximum=2147483647 Default=200
+        UnHotwireBaseDuration = 200,
+        -- Minimum=-2147483647 Maximum=2147483647 Default=3
+        UnHotwireElectricityScalar = 3,
+        -- Minimum=-2147483647 Maximum=2147483647 Default=0
+        UnHotwireMechanicsScalar = 0,
+        AllowKeyCrafting = true,
+        -- Minimum=0 Maximum=10 Default=2
+        KeyCraftingElectricity = 2,
+        -- Minimum=0 Maximum=10 Default=4
+        KeyCraftingMechanics = 4,
+        -- Minimum=0 Maximum=10 Default=6
+        KeyCraftingMetalWelding = 6,
+        -- Minimum=0 Maximum=2147483647 Default=2000
+        KeyCraftingBaseDuration = 2000,
+        -- Minimum=-2147483647 Maximum=2147483647 Default=1
+        KeyCraftingElectricityScalar = 1,
+        -- Minimum=-2147483647 Maximum=2147483647 Default=2
+        KeyCraftingMechanicsScalar = 2,
+        -- Minimum=-2147483647 Maximum=2147483647 Default=3
+        KeyCraftingMetalWeldingScalar = 3,
     },
 }
