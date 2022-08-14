@@ -14,5 +14,7 @@ function SpawnRegions()
 		{ name = "tmarch", file = "media/maps/tmarch/spawnpoints.lua" },
 		{ name = "tvalley", file = "media/maps/tvalley/spawnpoints.lua" },
 		{ name = "AZSpawn", file = "media/maps/AZSpawn/spawnpoints.lua" },
+		-- Uncomment the line below to add a custom spawnpoint for this server.
+		{ name = "Twiggy's Bar", serverfile = "servertest_spawnpoints.lua" },
 	}
 end
